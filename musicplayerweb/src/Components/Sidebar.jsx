@@ -1,6 +1,6 @@
 import React from "react";
 import styled from "styled-components";
-import logo from "../Images/musical-note.png";
+import logo from "../assets/images/musical-note.png"
 import { AiOutlineHome, AiOutlineHeart, AiOutlineCloudUpload } from 'react-icons/ai'
 import { MdOutlineLibraryMusic } from 'react-icons/md'
 
