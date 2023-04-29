@@ -1,5 +1,5 @@
 import React from "react";
-import LuxMusic from "./components/LuxMusic";
+import LuxMusic from "./Components/LuxMusic";
 
 export default function App() {
   return (
