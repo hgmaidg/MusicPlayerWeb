@@ -2,8 +2,7 @@ import React from "react";
 import styled from "styled-components";
 import Sidebar from "./Sidebar";
 import Header from "./Header";
-import Footer from "./Footer";
-import Body from "./Body";
+import Trending from './Trending/Trending';
 
 export default function LuxMusic() {
     return (
@@ -13,12 +12,11 @@ export default function LuxMusic() {
             <div className="body">
                 <Header/>
                 <div className="body__contents">
-                    <Body/>
+                    <Trending/>
                 </div>
             </div>
         </div>
         <div className="luxmusic__footer">
-            <Footer/>
         </div>
     </Container>
     );
