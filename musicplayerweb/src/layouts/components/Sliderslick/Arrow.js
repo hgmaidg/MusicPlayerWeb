@@ -12,7 +12,7 @@ function Arrow(pros) {
                                 pros.left ? 'arrow--left' : 'arrow--right'
                             }`}
                         >
-                            //arrow icons here
+                            //put arrow icons here 
                         </span>
                     )
                 )
