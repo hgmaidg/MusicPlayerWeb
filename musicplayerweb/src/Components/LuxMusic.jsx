@@ -1,8 +1,8 @@
 import React from "react";
 import styled from "styled-components";
-import Sidebar from "./Sidebar";
-import Header from "./Header";
-import Trending from './Trending/Trending';
+import Sidebar from "../layouts/Components/Sidebar/Sidebar";
+import Header from "../layouts/Components/Header/Header";
+import Trending from '../Components/Content/Trending/Trending';
 
 export default function LuxMusic() {
     return (

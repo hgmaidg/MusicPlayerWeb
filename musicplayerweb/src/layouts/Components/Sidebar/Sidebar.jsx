@@ -1,6 +1,6 @@
 import React from "react";
 import styled from "styled-components";
-import logo from "../assets/images/musical-note.png"
+// import logo from "../assets/images/musical-note.png"
 import { AiOutlineHome, AiOutlineHeart, AiOutlineCloudUpload } from 'react-icons/ai'
 import { MdOutlineLibraryMusic } from 'react-icons/md'
 
@@ -8,7 +8,7 @@ export default function Sidebar() {
   return <Container>
     <div className="top__links">
       <div className="logo">
-        <img src={logo} alt="LuxMusic" />
+        {/* <img src={logo} alt="LuxMusic" /> */}
       </div>
       <ul>
       <li>
