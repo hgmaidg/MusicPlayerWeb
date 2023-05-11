@@ -4,8 +4,8 @@
 // import { useNavigate } from 'react-router-dom';
 
 // import styles from './Home.module.scss';
-import Content from '../../components/Content';
-import Footer from '../../components/Footer/Footer';
+import Content from '../../Components/Content';
+import Footer from '../../Components/Footer/Footer';
 // import { sidebarSlice } from '../../redux/sliceReducer';
 // import { combinedStatusSelector } from '../../redux/selector';
 // import SliderSlick from '../../layouts/components/Sliderslick';
