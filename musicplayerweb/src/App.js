@@ -1,5 +1,5 @@
 // import React from "react";
-import LuxMusic from "./Components/LuxMusic";
+// import LuxMusic from "./Components/LuxMusic";
 
 // export default function App() {
 //   return (
@@ -8,13 +8,11 @@ import LuxMusic from "./Components/LuxMusic";
 //     </div>
 //   );
 // }
-
 import { Route, BrowserRouter as Router, Routes } from 'react-router-dom';
 import Wrapper from './Components/Wrapper/Wrapper';
 import { DefaultLayout } from './layouts/';
-// import Controls from './layouts/Components/Controls';
+import Controls from './layouts/Components/Controls';
 import { privateRoutes } from './routes';
-import Header from "./layouts/Components/Header/Header";
 
 function App() {
     return (
@@ -31,14 +29,13 @@ function App() {
                                 element={
                                     <div>
                                         <Wrapper>
-                                            {/* <Layout>
+                                            <Layout>
                                                 <Comp />
                                             </Layout>
                                             <div className="control_music">
                                                 <Controls />
-                                            </div> */}
+                                            </div>
                                         </Wrapper>
-                                        {/* <Header/> */}
                                     </div>
                                 }
                             />

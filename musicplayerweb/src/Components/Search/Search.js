@@ -1,11 +1,14 @@
 import PropTypes from 'prop-types';
 import React, { useEffect, useRef, useState } from 'react';
-import { AiOutlineSearch } from "react-icons/ai";
+import { faSearch, faXmark } from '@cseitz/fontawesome-svg-light';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 
-import { SearchApi } from "../../services";
-import styles from './Search.module/scss';
+import PlayListSong from '../../Feature/PlayListSong';
+import { AccountPropose } from '../Propose';
+import { SearchApi } from '../../services';
+import styles from './Search.module.scss';
 import classNames from 'classnames/bind';
+import { Loading } from '../Icons';
 
 const cx = classNames.bind(styles);
 
@@ -62,16 +65,20 @@ function Search({ visibleHeaderMobile, handleSearchForm }) {
         return () => window.removeEventListener('click', (e) => handleOffResult(e));
     }, [visible, containerRef.current]);
 
-
     return (
         <div className={cx('wrapper')} ref={containerRef}>
-            <div className={cx('search_input', visible|| visibleHeaderMobile ? 'isCollap' : '',)}>
-                <AiOutlineSearch className={cx('button_search')} />
+            <div
+                className={cx(
+                    'search_input',
+                    visible || visibleHeaderMobile ? 'isCollap' : '',
+                )}
+            >
+                <FontAwesomeIcon icon={faSearch} className={cx('button_search')} />
                 <input
                     value={value}
                     onFocus={(e) => handleFocus(e)}
                     onChange={(e) => handleType(e)}
-                    placeholder="Nhập tên bài hát, ca sĩ, thể loại..."
+                    placeholder="Tìm kiếm bài hát, nghệ sĩ, lời bài hát..."
                 />
                 {value && !loadingSearch && (
                     <FontAwesomeIcon
@@ -90,7 +97,9 @@ function Search({ visibleHeaderMobile, handleSearchForm }) {
                     <div className={cx('result_search')}>
                         {/* kiểm tra mảng có phần tử mới gửi dữ liệu qua Account */}
                         <h4 className={cx('result_title')}>
-                            {searchResult.length > 0 ? 'Gợi ý kết quả' : 'Nhập thông tin tìm kiếm'}
+                            {searchResult.length > 0
+                                ? 'Gợi ý kết quả'
+                                : 'Nhập thông tin tìm kiếm'}
                         </h4>
                         {searchResult.length > 0 && (
                             <AccountPropose
