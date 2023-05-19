@@ -1,3 +1,9 @@
+import { Route, BrowserRouter as Router, Routes } from 'react-router-dom';
+import Wrapper from './Components/Wrapper/Wrapper';
+import { DefaultLayout } from './layouts/';
+import Controls from './layouts/Components/Controls';
+import { privateRoutes } from './routes';
+
 // import React from "react";
 // import LuxMusic from "./Components/LuxMusic";
 
@@ -8,11 +14,6 @@
 //     </div>
 //   );
 // }
-import { Route, BrowserRouter as Router, Routes } from 'react-router-dom';
-import Wrapper from './Components/Wrapper/Wrapper';
-import { DefaultLayout } from './layouts/';
-import Controls from './layouts/Components/Controls';
-import { privateRoutes } from './routes';
 
 function App() {
     return (

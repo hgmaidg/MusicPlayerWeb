@@ -8,10 +8,10 @@ import 'react-toastify/dist/ReactToastify.css';
 import { combinedStatusSelector } from '../../redux/selector';
 import { loginSlice } from '../../redux/sliceReducer';
 import { getProfileUser } from '../../services/userApi';
-// import Form from '../Form/Form';
-// import ListQueue from '../ListQueue/';
-// import ModalTheme from '../ModalTheme/ModalTheme';
-// import MvPlayer from '../MvPlayer/MvPlayer';
+import Form from '../Form/Form';
+import ListQueue from '../ListQueue/';
+import ModalTheme from '../ModalTheme/ModalTheme';
+import MvPlayer from '../MvPlayer/MvPlayer';
 import styles from './Wrapper.module.scss';
 
 const cx = classNames.bind(styles);
@@ -109,10 +109,10 @@ function Wrapper({ children }) {
                 className={cx('toast_msg')}
             />
             {children}
-            {/* {isTheme && <ModalTheme />}
+            {isTheme && <ModalTheme />}
             {isMvPlayer && <MvPlayer />}
             {isPlayerQueue && <ListQueue />}
-            {isLogin && <Form />} */}
+            {isLogin && <Form />}
         </div>
     );
 }
