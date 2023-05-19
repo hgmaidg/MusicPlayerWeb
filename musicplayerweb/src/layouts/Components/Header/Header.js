@@ -3,7 +3,8 @@ import styled from "styled-components";
 import { AiOutlineSearch } from "react-icons/ai";
 import { CgProfile} from "react-icons/cg"
 
-export default function Header() {
+// export default function Header() {
+function Header() {
     return <Container>
         <div className="search__bar">
             <AiOutlineSearch />
@@ -79,3 +80,5 @@ const Container = styled.div`
         }
     }
 `;
+
+export default Header;
