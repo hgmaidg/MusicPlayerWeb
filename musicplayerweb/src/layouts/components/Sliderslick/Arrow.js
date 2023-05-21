@@ -1,18 +1,19 @@
 import Media from 'react-media';
+import { ArrowChevonLeft, ArrowChevonRight } from '../../../Components/Icons';
 
-function Arrow(pros) {
+function Arrow(props) {
     return (
         <Media query="(min-width: 600px">
             {(matches) => {
                 return (
                     matches && (
                         <span
-                            onClick={pros.onClick}
+                            onClick={props.onClick}
                             className={`arrow ${
-                                pros.left ? 'arrow--left' : 'arrow--right'
+                                props.left ? 'arrow--left' : 'arrow--right'
                             }`}
                         >
-                            //put arrow icons here 
+                            {props.left ? <ArrowChevonLeft /> : <ArrowChevonRight />}
                         </span>
                     )
                 )
