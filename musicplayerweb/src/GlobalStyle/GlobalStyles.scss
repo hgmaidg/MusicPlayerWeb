@@ -1,15 +1,17 @@
 :root {
     //color
-    --primary-blur: #170f2387;
-    --primary: #170f23;
-    --primary-bg: #34224f;
-    --purple-primary: #9b4de0;
+    --primary-blur: #333333;
+    --primary: #090909;
+    --primary-bg: #333333;
+    --purple-primary: #ff5f0f;
+    // --purple-primary: #01ffff;
     --primary-blur-bg: rgba(0, 0, 0, 0.05);
-    --sidebar-bg: #231b2e;
+    // --sidebar-bg: #252525;
+    --sidebar-bg: #1c1c1c;
     --sidebar-popup-bg: #2a213a;
     --layout-header-bg: rgba(23, 15, 35, 0.666);
     --modal-layout-bg: rgba(0, 0, 0, 0.5);
-    --player-bg: #130c1c;
+    --player-bg: #000;
     --background-section: '';
     --background-section-size: 1920px auto;
     --newsonglayout-bg: url('https://zjs.zmdcdn.me/zmp3-desktop/releases/v1.9.9/static/media/new-release-bg.73d8f976.jpg');
