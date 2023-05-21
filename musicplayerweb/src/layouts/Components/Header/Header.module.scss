@@ -7,8 +7,8 @@
     backdrop-filter: blur(50px);
     background: linear-gradient(
         transparent,
-        transparent 50%,
-        var(--layout-header-bg) 50%,
+        transparent 0%,
+        var(--layout-header-bg) 70%,
         var(--layout-header-bg)
     );
     background-size: 100% 200%;
@@ -31,12 +31,12 @@
         background-color: hsla(0, 0, 100%, 0.1);
         height: 60px;
     }
-    &.isScroll {
-        backdrop-filter: blur(50px);
-        background-position: -100% -100%;
-        transition: background-position 0.4s;
-        box-shadow: 0 3px 5px rgba(0, 0, 0, 0.1);
-    }
+    // &.isScroll {
+    //     backdrop-filter: blur(50px);
+    //     background-position: -100% -100%;
+    //     transition: background-position 0.4s;
+    //     box-shadow: 0 3px 5px rgba(0, 0, 0, 0.1);
+    // }
 }
 .inner {
     display: flex;
