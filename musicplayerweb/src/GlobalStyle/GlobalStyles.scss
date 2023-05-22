@@ -78,7 +78,8 @@ textarea {
     color: var(--text-primary);
 }
 input::placeholder {
-    color: var(--text-primary) !important ;
+    // color: var(--text-primary) !important ;
+    color: #999999 !important;
 }
 a[href] {
     text-decoration: none;
