@@ -103,11 +103,11 @@ export const MENU_SETTING_HEADER = [
         icon: Phone,
         textblur: true,
     },
-    {
-        title: 'Quảng cáo',
-        icon: Ads,
-        textblur: true,
-    },
+    // {
+    //     title: 'Quảng cáo',
+    //     icon: Ads,
+    //     textblur: true,
+    // },
     {
         title: 'Thỏa thuận sử dụng',
         icon: Dieukhoan,

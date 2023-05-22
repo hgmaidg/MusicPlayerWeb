@@ -22,7 +22,7 @@ function MenuItem({ data, onHandle }) {
                 href={data.href}
                 title={data.title}
                 nestest={data.children}
-                spederate={data.spederate}
+                // spederate={data.spederate}
             >
                 <span className={cx('item_title')}>{data.title}</span>
             </Button>

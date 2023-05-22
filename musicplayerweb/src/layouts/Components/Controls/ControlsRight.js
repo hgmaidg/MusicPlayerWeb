@@ -28,10 +28,10 @@ function ControlsRight({ isMobile, isControlModal }) {
                     extraTitle: 'MV',
                 },
 
-                {
-                    icon: Multi,
-                    extraTitle: 'Chế độ cửa sổ',
-                },
+                // {
+                //     icon: Multi,
+                //     extraTitle: 'Chế độ cửa sổ',
+                // },
                 {
                     icon: isVolume ? Volumn : VolumnOff,
                     type: 'volume',

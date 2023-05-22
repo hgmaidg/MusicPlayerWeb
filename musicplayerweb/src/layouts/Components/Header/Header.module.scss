@@ -4,13 +4,14 @@
     padding: 15px;
     right: 0;
     z-index: 9998;
-    backdrop-filter: blur(50px);
-    background: linear-gradient(
-        transparent,
-        transparent 0%,
-        var(--layout-header-bg) 70%,
-        var(--layout-header-bg)
-    );
+    // backdrop-filter: blur(50px);
+    // background: linear-gradient(
+    //     transparent,
+    //     transparent 0%,
+    //     var(--layout-header-bg) 70%,
+    //     var(--layout-header-bg)
+    // );
+    background: var(--layout-header-bg);
     background-size: 100% 200%;
     box-shadow: 0 3px 5px rgba(0, 0, 0, 0.1);
     transition: background-position 0.4s;

@@ -14,7 +14,7 @@ import {
     faMicrophone,
     faPhone,
     faRectangleAd,
-    faRepeat,
+    faRepeat1,
     faShuffle,
     faStandardDefinition,
     faVolume,
@@ -314,7 +314,7 @@ export const Next = () => {
     return <FontAwesomeIcon icon={faForwardStep} />;
 };
 export const Repeat = () => {
-    return <FontAwesomeIcon icon={faRepeat} />;
+    return <FontAwesomeIcon icon={faRepeat1} />;
 };
 export const Play = () => {
     return <FontAwesomeIcon icon={faPlay} />;
