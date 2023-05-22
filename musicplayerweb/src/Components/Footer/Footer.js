@@ -25,8 +25,22 @@ function Footer() {
     };
     return (
         <div className={cx('wrapper')}>
+            {/* <h3 className={cx('title_footer')}>VỀ CHÚNG TÔI</h3> */}
+            {/* <hr></hr> */}
             <h3 className={cx('title_footer')}>ĐỐI TÁC ÂM NHẠC</h3>
             <div className={cx('container')}>{renderPartner()}</div>
+            
+            <div className={cx('about-container')}>   
+                 <div className={cx('logo-bg')}></div>
+             
+                <div className={cx('text_footer')}><a href="">GIỚI THIỆU</a></div>
+                <div className={cx('text_footer')}><a href="">BẢN QUYỀN</a></div>
+                <div className={cx('text_footer')}><a href="">QUẢNG CÁO</a></div>
+                <div className={cx('text_footer')}><a href="">TUYỂN DỤNG</a></div>
+                <div className={cx('text_footer')}><a href="">LIÊN HỆ</a></div>
+
+            </div>
+            
         </div>
     );
 }

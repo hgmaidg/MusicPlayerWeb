@@ -1,5 +1,5 @@
 .wrapper { 
-    padding: 30px 40px;
+    padding: 30px 40px 0px 40px;
 
     @media (max-width: 1220px) {
         padding : 30px 20px
@@ -10,8 +10,13 @@
     align-items: center;
     font-size: 14px;
     color: var(--text-secondary); 
-    margin: 30px 0;
+    margin: 30px 0px;
     justify-content: center;
+}
+
+hr {
+    margin-top: 30px;
+    color: var(--text-secondary);
 }
 
 .container {
@@ -44,4 +49,23 @@
     max-height: 80%;
     width: auto;
     height: auto;
+}
+
+.logo-bg {
+    width: 200px;
+    height: 100px;
+    background: url('../../assets/images/SideBar/LogoLuxMusic.png') 50% / contain no-repeat;
+    align-items: center;
+}
+
+.about-container {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    .text_footer a {
+        font-weight: bold;
+        color: var(--text-secondary);
+    }
 }
