@@ -258,20 +258,20 @@ function Header({ styles, isScrollHeader }) {
                                     LeftIcons={DowloadIcon}
                                     sizes="normal"
                                 >
-                                    Dowload
+                                    Download
                                 </Button>
                                 <Button
                                     circle
                                     Icons={ButtonTheme}
                                     extraTitle={'Chủ đề'}
-                                    onHandle={onChangeTheme}
+                                    // onHandle={onChangeTheme}
                                 />
 
-                                <Button
+                                {/* <Button
                                     circle
                                     Icons={IconsVIP}
                                     extraTitle={'Nâng cấp VIP'}
-                                />
+                                /> */}
 
                                 <Menu items={MENU_SETTING_HEADER}>
                                     <Button

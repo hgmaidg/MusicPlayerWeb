@@ -65,7 +65,7 @@
         width: 70px;
         margin-top: 10px;
         height: 40px;
-        background: url('https://zjs.zmdcdn.me/zmp3-desktop/releases/v1.9.24/static/media/icon_zing_mp3_60.f6b51045.svg')
+        background: url('../../../assets/images/musical-note.png')
             50% / contain no-repeat;
     }
 
@@ -110,7 +110,7 @@
     background-color: var(--sidebar-popup-bg);
 
     .logo {
-        background-image: url('https://zmp3-static.zmdcdn.me/skins/zmp3-v6.1/images/backgrounds/logo-light.svg');
+        background-image: url('../../../assets/images/musical-note.png');
     }
 }
 //responsive mobile

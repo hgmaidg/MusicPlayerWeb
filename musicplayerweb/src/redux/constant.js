@@ -42,10 +42,10 @@ export const MENU_USER_HEADER = [
         title: 'Nâng cấp VIP',
         icon: IconsVIP,
     },
-    {
-        title: 'Mua code VIP',
-        icon: IconsVIP,
-    },
+    // {
+    //     title: 'Mua code VIP',
+    //     icon: IconsVIP,
+    // },
     {
         title: 'Tải lên',
         icon: Upload,
@@ -58,13 +58,13 @@ export const MENU_USER_HEADER = [
     },
 ];
 export const MENU_SETTING_HEADER = [
-    {
-        title: 'Danh sách chặn',
-        icon: Block,
-    },
-    {
-        title: 'Chất lượng nhạc',
-        icon: Quality,
+    // {
+    //     title: 'Danh sách chặn',
+    //     icon: Block,
+    // },
+    // {
+    //     title: 'Chất lượng nhạc',
+    //     icon: Quality,
         /*         children: {
             data: [
                 {
@@ -77,10 +77,10 @@ export const MENU_SETTING_HEADER = [
                 },
             ],
         }, */
-    },
-    {
-        title: 'Giao diện',
-        icon: ThemeMusic,
+    // },
+    // {
+    //     title: 'Giao diện',
+    //     icon: ThemeMusic,
         /*   children: {
             data: [
                 {
@@ -91,7 +91,7 @@ export const MENU_SETTING_HEADER = [
                 },
             ],
         }, */
-    },
+    // },
     {
         title: 'Giới thiệu',
         icon: Info,
@@ -133,7 +133,7 @@ export const renderFeatureRight = (onHandle) => {
 };
 export const SIDEBAR_MENU = [
     {
-        title: 'Cá nhân',
+        title: 'Cá Nhân',
         icon: Private,
         to: '/my-player',
     },
@@ -150,7 +150,8 @@ export const SIDEBAR_MENU = [
     {
         title: 'Radio',
         icon: Radio,
-        to: '/radio',
+        // to: '/radio',
+        to: "/",
     },
     /*  {
         title: 'Theo Dõi',
@@ -283,7 +284,7 @@ export const BANNER_ALBUM_HOT = [
     {
         src: require('../assets/images/BannerAlbumHot/banner-album-hot-nhac-han.jpg'),
         slug_banner_album_hot: 'nhac-han',
-        title: 'Những Bài Hát Hay Nhất HÀN "XẺNG"',
+        title: 'Những Bài Hát Hay Nhất KPOP',
         name_data: [
             {
                 slug_name_singer: 'bts',
@@ -302,7 +303,7 @@ export const BANNER_ALBUM_HOT = [
     {
         src: require('../assets/images/BannerAlbumHot/banner-album-hot-nhac-pop-au-my.jpg'),
         slug_banner_album_hot: 'pop-au-my',
-        title: 'Đỉnh Cao Nhạc Pop, Nghe Như Không Nghe !!!',
+        title: 'Đỉnh Cao Nhạc Pop',
         name_data: [
             {
                 slug_name_singer: 'sasha-alex-sloan',
