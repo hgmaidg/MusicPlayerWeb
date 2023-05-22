@@ -4,7 +4,7 @@
     left: 0;
     right: 0;
     bottom: 0;
-    background-color: hsla(0, 0, 0, 0.6);
+    background-color: hsla(0, 0, 0, 0.7);
     display: flex;
     justify-content: center;
     align-items: center;
@@ -13,12 +13,14 @@
     .container_section {
         display: flex;
         flex-direction: column;
-        background-color: var(--player-bg);
+        // background-color: var(--player-bg);
+        background-color: var(--layout-header-bg);
         display: flex;
         flex-direction: column;
-        padding: 20px;
+        padding: 30px;
         border-radius: 10px;
-        width: 50vw;
+        width: 30vw;
+        // border: var(--purple-primary) 1px solid;
 
         @media (max-width: 600px) {
             width: 80vw;
@@ -26,9 +28,9 @@
         .title_form {
             font-size: 25px;
             font-weight: 600;
-            color: var(--text-primary);
+            color: var(--purple-primary);
             text-align: center;
-            padding-top: 10px;
+            padding-top: 0px;
             position: relative;
             .btn_close {
                 position: absolute;
@@ -47,8 +49,8 @@
                     font-weight: 600;
                 }
                 .input_form {
-                    padding: 10px 5px;
-                    border-radius: 4px;
+                    padding: 10px 15px;
+                    border-radius: 20px;
                     width: 100%;
                     margin: 10px 0 5px 0;
                     font-size: 14px;
@@ -86,13 +88,14 @@
             position: relative;
             color: var(--white);
             padding: 10px 20px;
-            border-radius: 8px;
+            border-radius: 20px;
             width: 100%;
             display: flex;
             align-items: center;
             text-align: center;
             justify-content: center;
             margin-top: 10px;
+            font-weight: bold;
             cursor: pointer;
         }
         .isLoading {

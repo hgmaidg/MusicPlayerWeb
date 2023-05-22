@@ -81,51 +81,51 @@ function Form() {
 
         if (isLoginForm) {
             if (isEmpty(email)) {
-                msg.email = 'Vui lòng nhập email';
+                msg.email = 'Vui lòng nhập email!';
             } else {
                 const regexEmail = new RegExp(
                     '^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+.[a-zA-Z]{2,}$',
                 );
-                if (!regexEmail.test(email)) msg.email = 'Vui Lòng Nhập Đúng Email';
+                if (!regexEmail.test(email)) msg.email = 'Vui lòng nhập đúng email!';
             }
             if (isEmpty(password)) {
-                msg.password = 'Vui lòng nhập mật khẩu';
+                msg.password = 'Vui lòng nhập mật khẩu!';
             } else {
                 const regexPassword = new RegExp('^[a-zA-Z0-9]{8,}$');
                 if (!regexPassword.test(password))
-                    msg.password = 'Mật khẩu phải chứa đủ 8 kí tự';
+                    msg.password = 'Mật khẩu phải chứa đủ 8 kí tự!';
             }
         } else {
             if (isEmpty(password)) {
-                msg.password = 'Vui lòng nhập mật khẩu';
+                msg.password = 'Vui lòng nhập mật khẩu!';
             } else {
                 const regexPassword = new RegExp('^[a-zA-Z0-9]{8,}$');
                 if (!regexPassword.test(password))
-                    msg.password = 'Mật khẩu phải chứa đủ 8 kí tự';
+                    msg.password = 'Mật khẩu phải chứa đủ 8 kí tự!';
             }
 
             if (isEmpty(passwordConfirm)) {
-                msg.passwordconfirm = 'Vui lòng xác nhận mật khẩu';
+                msg.passwordconfirm = 'Vui lòng xác nhận mật khẩu!';
             } else {
                 if (passwordConfirm !== password) {
-                    msg.passwordconfirm = 'Mật khẩu không chính xác';
+                    msg.passwordconfirm = 'Mật khẩu không chính xác!';
                 }
             }
 
             if (isEmpty(user?.trim())) {
-                msg.user = 'Vui lòng nhập user';
+                msg.user = 'Vui lòng nhập username!';
             } else {
                 const regexUser = new RegExp('^[a-z0-9_-]{8,20}$');
                 if (!regexUser.test(user)) msg.user = 'User phải từ 8 - 20 kí tự';
             }
 
             if (isEmpty(email)) {
-                msg.email = 'Vui lòng nhập email';
+                msg.email = 'Vui lòng nhập email!';
             } else {
                 const regexEmail = new RegExp(
                     '^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+.[a-zA-Z]{2,}$',
                 );
-                if (!regexEmail.test(email)) msg.email = 'Vui Lòng Nhập Đúng Email';
+                if (!regexEmail.test(email)) msg.email = 'Vui lòng nhập đúng email!';
             }
         }
 
@@ -146,11 +146,11 @@ function Form() {
             try {
                 await setUserRegister(user, passwordConfirm, email);
 
-                toast.success('Tạo tài khoản thành công !!!');
+                toast.success('Tạo tài khoản thành công!');
                 setIsLogin(true);
             } catch (error) {
                 if (error.response.status === 400) {
-                    toast.info('Tài khoản đã tồn tại !!!');
+                    toast.info('Tài khoản đã tồn tại!');
                 }
             }
             setLoadingForm(false);
@@ -170,10 +170,10 @@ function Form() {
                 const response = await getUserLogin(email, password);
                 dispatch(loginSlice.actions.setDataUser(response.data));
                 dispatch(loginSlice.actions.setAccessToken(response.accessToken));
-                toast.success('Đăng nhập thành công !!!');
+                toast.success('Đăng nhập thành công!');
             } catch (err) {
                 if (err.response.status === 400) {
-                    toast.error('Sai tên đăng nhập hoặc mật khẩu !!!');
+                    toast.error('Sai tên đăng nhập hoặc mật khẩu!');
                 }
             }
             setLoadingForm(false);
@@ -197,7 +197,7 @@ function Form() {
         <div className={cx('wrapper')}>
             <div className={cx('container_section')}>
                 <h3 className={cx('title_form')}>
-                    {isLoginForm ? 'Đăng nhập' : 'Đăng Kí'}
+                    {isLoginForm ? 'Đăng Nhập' : 'Đăng Kí'}
                     <span className={cx('btn_close')} onClick={handleCloseForm}>
                         <Button Icons={Close} circle />
                     </span>
@@ -239,7 +239,7 @@ function Form() {
                                 <input
                                     type="password"
                                     id="password"
-                                    placeholder="Mật khẩu..."
+                                    placeholder="Nhập mật khẩu..."
                                     className={cx(
                                         'input_form',
                                         validMsgError.password ? 'invalid' : '',
@@ -260,12 +260,12 @@ function Form() {
                         <div className={cx('form')}>
                             <div className={cx('form_input')}>
                                 <label className={cx('form_label')} htmlFor="userName">
-                                    User
+                                    Username
                                 </label>
                                 <input
                                     type="text"
                                     id="userName"
-                                    placeholder="Tên đăng nhập"
+                                    placeholder="Nhập tên đăng nhập..."
                                     className={cx(
                                         'input_form',
                                         validMsgError.user ? 'invalid' : '',
@@ -286,7 +286,7 @@ function Form() {
                                 <input
                                     type="password"
                                     id="password"
-                                    placeholder="Mật khẩu..."
+                                    placeholder="Nhập mật khẩu..."
                                     className={cx(
                                         'input_form',
                                         validMsgError.password ? 'invalid' : '',
@@ -310,7 +310,7 @@ function Form() {
                                 <input
                                     type="password"
                                     id="password_confirm"
-                                    placeholder="Xác nhận mật khẩu"
+                                    placeholder="Xác nhận mật khẩu..."
                                     className={cx(
                                         'input_form',
                                         validMsgError.passwordconfirm ? 'invalid' : '',
@@ -350,8 +350,8 @@ function Form() {
                     <div className={cx('bottom_form')}>
                         <span className={cx('bottom_text')}>
                             {isLoginForm
-                                ? 'Bạn không có tài khoản ?'
-                                : 'Bạn đã có tài khoản ?'}
+                                ? 'Bạn không có tài khoản?'
+                                : 'Bạn đã có tài khoản?'}
                         </span>
                         <span
                             className={cx('bottom_btn_register')}
@@ -369,7 +369,7 @@ function Form() {
                         <span className={cx('loading_form')}>
                             {isLoadingForm && <Loading />}
                         </span>
-                        <span>{isLoginForm ? 'Đăng nhập' : 'Đăng kí'}</span>
+                        <span>{isLoginForm ? 'Đăng Nhập' : 'Đăng Kí'}</span>
                     </button>
                 </form>
             </div>
