@@ -8,6 +8,7 @@ import Category from '../pages/Category';
 import Zingchart from '../pages/Zingchart';
 import MyPlayer from '../pages/MyPlayer/';/* 
 import Following from '../pages/Following'; */
+import Introduce from '../pages/Introduce/Introduce';
 import Top100 from '../pages/Top100/Top100';
 import AlbumSinger from '../pages/AlbumSinger';
 import AccountPage from '../pages/Account/Account';
@@ -75,6 +76,10 @@ const config = {
     errorpage: {
         component: Error,
         path: '*',
+    },
+    introduce: {
+        component: Introduce,
+        path: 'introduce',
     },
 };
 export default config;

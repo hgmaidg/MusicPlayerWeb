@@ -264,7 +264,7 @@ function Header({ styles, isScrollHeader }) {
                                     circle
                                     Icons={ButtonTheme}
                                     extraTitle={'Chủ đề'}
-                                    // onHandle={onChangeTheme}
+                                    onHandle={onChangeTheme}
                                 />
 
                                 {/* <Button

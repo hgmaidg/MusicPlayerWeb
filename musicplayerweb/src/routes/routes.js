@@ -62,4 +62,8 @@ export const privateRoutes = [
         path: config.trending.path,
         component: config.trending.component,
     },
+    {
+        path: config.introduce.path,
+        component: config.introduce.component,
+    },
 ];
