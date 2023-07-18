@@ -48,9 +48,11 @@
         right: 0;
         height: 630px;
         background-image: var(--newsonglayout-bg);
-        background-position: top;
+        background-position: center top;
         background-size: cover;
         background-repeat: no-repeat;
+        background-attachment: scroll;
+        // background-position: center !important;
     }
     .box-1 {
         z-index: 4;

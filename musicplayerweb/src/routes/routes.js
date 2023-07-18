@@ -37,9 +37,13 @@ export const privateRoutes = [
         component: config.newupdate.component,
         layout: config.newupdate.layout,
     },
+    // {
+    //     path: config.radio.path,
+    //     component: config.radio.component,
+    // },
     {
-        path: config.radio.path,
-        component: config.radio.component,
+        path: config.playhistory.path,
+        component: config.playhistory.component,
     },
     {
         path: config.category.path,

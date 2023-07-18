@@ -9,6 +9,7 @@ export const loginSlice = createSlice({
             data: {},
             accessToken: ACCESS_TOKEN_STORAGE || '',
             listFavorite: [],
+            playHistory: [],
         },
     },
     reducers: {
@@ -23,6 +24,9 @@ export const loginSlice = createSlice({
         },
         setListSongFavorite: (state, action) => {
             state.user.listFavorite = action.payload;
+        },
+        setPlayHistory: (state, action) => {
+            state.user.playHistory = action.payload;
         },
     },
 });

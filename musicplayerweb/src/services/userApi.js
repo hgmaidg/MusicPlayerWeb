@@ -60,3 +60,30 @@ export const getSongFavorite = async (accessToken, limit = 100) => {
     });
     return result;
 };
+
+export const createPlayHistoryUser = async (accessToken, _id) => {
+    const result = await httpRequest.post(
+        '/play-history/create/',
+        {
+            idMusic: _id,
+            headers: {
+                Authorization: `Bearer ${accessToken}`,
+                'Content-type': 'application/json',
+            },
+        },
+    );
+    return result;
+};
+
+export const getPlayHistory = async (accessToken, limit = 100) => {
+    const result = await httpRequest.get('/play-history/get-by-token?_limit=20', {
+        _limit: limit,
+        headers: {
+            Authorization: `Bearer ${accessToken}`,
+        },
+    });
+    return result;
+};
+
+
+

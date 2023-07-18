@@ -15,6 +15,7 @@ import {
     createSongFavoriteUser,
     getSongFavorite,
     removeSongFavoriteUser,
+    createPlayHistoryUser,
 } from '../services/userApi';
 
 const cx = classNames.bind(styles);
@@ -57,6 +58,13 @@ export const ActionBtnAlbum = ({
         const result = await removeSongFavoriteUser(dataUser.accessToken, song._id);
         return result;
     };
+
+    const createPlayHistoryUser = async () => {
+        const result = await createPlayHistoryUser(dataUser.accessToken, song._id);
+        return result;
+    };
+
+    
 
     const handleLike = async () => {
         if (playlistSong) {
@@ -106,7 +114,7 @@ export const ActionBtnAlbum = ({
         },
     ];
     const onHandle = (e, btn) => {
-        if (
+        if ( 
             (isSlugCategory && isSlugCategoryCurrent && !isPlayingRadio) ||
             (isSlugNameSinger && isSlugNameSingerCurrent && !isPlayingRadio)
         ) {
@@ -141,7 +149,7 @@ export const ActionBtnAlbum = ({
                                     featureSlice.actions.setSongCurrent(data[randomID]),
                                 ) &&
                                 dispatch(featureSlice.actions.setDataSongs(data)) &&
-                                dispatch(statusSlice.actions.isPlayingChange(true))
+                                dispatch(statusSlice.actions.isPlayingChange(true)) 
                             );
                         }
                     } else {

@@ -147,11 +147,17 @@ export const SIDEBAR_MENU = [
         icon: Chart,
         to: '/zing-chart',
     }, */
+    // {
+    //     title: 'Radio',
+    //     icon: Radio,
+    //     // to: '/radio',
+    //     to: "/",
+    // },
     {
-        title: 'Radio',
+        title: 'Lịch Sử Nghe',
         icon: Radio,
         // to: '/radio',
-        to: "/",
+        to: "/play-history",
     },
     /*  {
         title: 'Theo Dõi',

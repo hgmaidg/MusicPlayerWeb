@@ -15,6 +15,7 @@ import AccountPage from '../pages/Account/Account';
 import { AccountLayout, NewSongLayout } from '../layouts';
 import ArtistBanner from '../pages/ArtistBanner/ArtistBanner';
 import Radio from '../pages/Radio/Radio';
+import PlayHistory from '../pages/PlayHistory/PlayHistory';
 
 const config = {
     home: {
@@ -48,10 +49,15 @@ const config = {
         path: 'new-songs',
         layout: NewSongLayout,
     },
-    radio: {
-        component: Radio,
-        path: 'radio',
+    // radio: {
+    //     component: Radio,
+    //     path: 'radio',
+    // },
+    playhistory: {
+        component: PlayHistory,
+        path: 'play-history',
     },
+    
     category: {
         component: Category,
         path: 'category',
