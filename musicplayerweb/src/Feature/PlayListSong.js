@@ -155,12 +155,12 @@ function PlayListSong(
                                         {song.name_music}
                                     </h4>
                                     <span className={cx('name_singer_item')}>
-                                        <Link
-                                            to={`/${song.slug_name_singer}`}
-                                            state={song.slug_name_singer}
-                                        >
-                                            {song.name_singer}
-                                        </Link>
+                                        {/* <Link
+                                            to={`/${song.name_singer}`}
+                                            state={song.name_singer}
+                                        > */}
+                                            {song?.name_singer}
+                                        {/* </Link> */}
                                     </span>
 
                                     {/* favorite of trending music */}

@@ -372,8 +372,7 @@ export const MENU_THEME_LIST = {
         },
         {
             title: 'Mặc định',
-            cardArtist:
-                'https://zmp3-static.zmdcdn.me/skins/zmp3-v6.1/images/theme/purple.jpg',
+            cardArtist: require('../assets/images/LisTheme/card_artist/card_theme_orange.png'),
             properties: {
                 colorPrimary: '#090909',
                 // textHover: '#c273ed',

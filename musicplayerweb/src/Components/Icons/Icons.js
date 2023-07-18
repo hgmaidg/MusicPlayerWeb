@@ -22,6 +22,7 @@ import {
     faXmark,
     faChevronLeft,
     faChevronRight,
+    faUpload,
 } from '@cseitz/fontawesome-svg-light';
 import { faEye, faHeart, faWindowRestore } from '@fortawesome/free-regular-svg-icons';
 import {
@@ -38,6 +39,7 @@ import {
     faTriangleExclamation,
     faArrowLeft,
     faArrowRight,
+    faFileUpload
 } from '@fortawesome/free-solid-svg-icons';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import images from '../../assets';
@@ -75,6 +77,10 @@ export const Setting = () => {
 };
 export const IconsVIP = () => {
     return <FontAwesomeIcon icon={faGem} />;
+};
+
+export const IconsUpload = () => {
+    return <FontAwesomeIcon icon={faUpload} />;
 };
 
 export const Upload = () => {

@@ -101,6 +101,7 @@ import {
     Close,
     DowloadIcon,
     IconsVIP,
+    IconsUpload,
     SearchMobile,
     Setting,
 } from '../../../Components/Icons';
@@ -267,11 +268,11 @@ function Header({ styles, isScrollHeader }) {
                                     onHandle={onChangeTheme}
                                 />
 
-                                {/* <Button
+                                <Button
                                     circle
-                                    Icons={IconsVIP}
-                                    extraTitle={'Nâng cấp VIP'}
-                                /> */}
+                                    Icons={IconsUpload}
+                                    extraTitle={'Upload'}
+                                />
 
                                 <Menu items={MENU_SETTING_HEADER}>
                                     <Button
