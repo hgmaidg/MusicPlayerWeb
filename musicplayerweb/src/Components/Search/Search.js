@@ -78,7 +78,7 @@ function Search({ visibleHeaderMobile, handleSearchForm }) {
                     value={value}
                     onFocus={(e) => handleFocus(e)}
                     onChange={(e) => handleType(e)}
-                    placeholder="Tìm kiếm bài hát, nghệ sĩ, lời bài hát..."
+                    placeholder="Tìm kiếm bài hát, nghệ sĩ"
                 />
                 {value && !loadingSearch && (
                     <FontAwesomeIcon

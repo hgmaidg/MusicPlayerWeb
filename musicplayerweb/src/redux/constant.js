@@ -398,10 +398,10 @@ export const MENU_THEME_LIST = {
             },
         },
         {
-            title: 'Jack',
-            cardArtist: require('../assets/images/LisTheme/card_artist/card_theme_jack.jpg'),
+            title: 'Sky',
+            cardArtist: require('../assets/images/LisTheme/card_artist/chihiro-card (Custom).jpg'),
             properties: {
-                backgroundImg: require('../assets/images/LisTheme/img-background_jack.jpg'),
+                backgroundImg: require('../assets/images/LisTheme/chihiro043.jpg'),
                 colorPrimary: '#D08011',
                 textHover: '#F59D22',
                 playerBg: '#4C473E',
@@ -419,9 +419,9 @@ export const MENU_THEME_LIST = {
 
         {
             title: 'Jennie',
-            cardArtist: require('../assets/images/LisTheme/card_artist/card_theme_jennie.jpg'),
+            cardArtist: require('../assets/images/LisTheme/card_artist/jennie-card.png'),
             properties: {
-                backgroundImg: require('../assets/images/LisTheme/img-background_jennie.jpg'),
+                backgroundImg: require('../assets/images/LisTheme/jennie.png'),
                 colorPrimary: '#BBB9C4',
                 textHover: '#6F1F89',
                 layoutBg: 'tranparent',
@@ -438,9 +438,9 @@ export const MENU_THEME_LIST = {
         },
         {
             title: 'Jisoo',
-            cardArtist: require('../assets/images/LisTheme/card_artist/card_theme_jiiso.jpg'),
+            cardArtist: require('../assets/images/LisTheme/card_artist/jisoo-card.png'),
             properties: {
-                backgroundImg: require('../assets/images/LisTheme/img-background_jisoo.jpg'),
+                backgroundImg: require('../assets/images/LisTheme/jisoo.png'),
                 colorPrimary: '#8D22C3',
                 textHover: '#8D22C3',
                 layoutBg: 'tranparent',
@@ -457,9 +457,9 @@ export const MENU_THEME_LIST = {
         },
         {
             title: 'Rose',
-            cardArtist: require('../assets/images/LisTheme/card_artist/card_theme_rose.jpg'),
+            cardArtist: require('../assets/images/LisTheme/card_artist/rose-card.png'),
             properties: {
-                backgroundImg: require('../assets/images/LisTheme/img-background_rose.jpg'),
+                backgroundImg: require('../assets/images/LisTheme/rose.png'),
                 colorPrimary: '#1A3570',
                 textHover: '#4C7CFF',
                 layoutBg: 'tranparent',
@@ -475,10 +475,10 @@ export const MENU_THEME_LIST = {
             },
         },
         {
-            title: 'IU',
-            cardArtist: require('../assets/images/LisTheme/card_artist/card_theme_iu.jpg'),
+            title: 'Zhang Rounan',
+            cardArtist: require('../assets/images/LisTheme/card_artist/rounan-card.png'),
             properties: {
-                backgroundImg: require('../assets/images/LisTheme/img-background_ui.jpg'),
+                backgroundImg: require('../assets/images/LisTheme/zhangrounan.png'),
                 colorPrimary: '#EFEDEB',
                 textHover: '#AC3E82', 
                 layoutBg: 'tranparent',
@@ -495,9 +495,9 @@ export const MENU_THEME_LIST = {
         },
         {
             title: 'Lisa',
-            cardArtist: require('../assets/images/LisTheme/card_artist/card_theme_lisa.jpg'),
+            cardArtist: require('../assets/images/LisTheme/card_artist/lisa-card.png'),
             properties: {
-                backgroundImg: require('../assets/images/LisTheme/img-background_lisa.jpg'),
+                backgroundImg: require('../assets/images/LisTheme/lisa.png'),
                 colorPrimary: '##D14781',
                 textHover: '#CC3373',
                 layoutBg: 'tranparent',

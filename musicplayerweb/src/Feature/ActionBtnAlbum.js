@@ -89,6 +89,11 @@ export const ActionBtnAlbum = ({
     const handleSelectMoreSong = () => {
         setIsMore(true);
     };
+
+    const handleSaveHistory = () => {
+
+    };
+
     const BUTTON_HOVER = [
         {
             extraTitle: isFavorite ? 'Xóa khỏi thư viện ' : 'Thêm vào thư viện',
@@ -309,7 +314,38 @@ export const ActionBtnAlbum = ({
             };
             fetch();
         }
-    }, [isFavorite, callData]);
+    }, [isFavorite, callData]); 
+
+    useEffect(() => {
+        if (
+            !dataUser.listFavorite ||
+            dataUser.listFavorite.length === 0 ||
+            !dataUser.accessToken
+        ) {
+            // Nếu danh sách yêu thích rỗng thì không có bài hát nào trong danh sách yêu thích
+            setIsFavorite(false);
+            return;
+        }
+        // Kiểm tra xem bài hát có nằm trong danh sách yêu thích hay không
+        const isSongFavorite = dataUser.listFavorite.some(
+            (item) => item?._id === song?._id,
+        );
+        setIsFavorite(isSongFavorite);
+    }, [dataUser.listFavorite.length, song, dataUser.accessToken]);
+
+    useEffect(() => {
+        //getDataSongFavorite of user
+        if (callData) {
+            const fetch = async () => {
+                const result = await getSongFavorite(dataUser.accessToken);
+                if (result.data) {
+                    const dataMusic = result.data.map((song) => song.music);
+                    dispatch(loginSlice.actions.setListSongFavorite(dataMusic));
+                }
+            };
+            fetch();
+        }
+    }, [isFavorite, callData]); 
 
     return renderBtnHover();
 };
