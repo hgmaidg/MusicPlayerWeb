@@ -32,6 +32,11 @@ export const isTestThemeSelector = (state) => state.theme.isTestTheme;
 export const isLoginSelector = (state) => state.login.isLogin;
 export const dataUserSelector = (state) => state.login.user;
 
+// upload
+
+// export const isUploadSelector = (state) => state.login.isLogin;
+// export const dataUserSelector = (state) => state.login.user;
+
 export const combinedStatusSelector = createSelector(
     isPlayingSelector,
     isRepeatSelector,

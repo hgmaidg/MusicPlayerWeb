@@ -4,3 +4,4 @@ export * from './statusSlice';
 export * from './themeSlice';
 export * from './loginSlice';
 export * from './radioSlice';
+export * from './uploadSlice';

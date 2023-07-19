@@ -34,10 +34,10 @@ function Footer() {
             <div className={cx('about-container')}>   
                  <div className={cx('logo-bg')}></div>
                 <div className={cx('text_footer')}><a href="Introduce">GIỚI THIỆU</a></div>
-                <div className={cx('text_footer')}><a href="">BẢN QUYỀN</a></div>
+                {/* <div className={cx('text_footer')}><a href="">BẢN QUYỀN</a></div> */}
                 <div className={cx('text_footer')}><a href="https://zalo.careers/about#Adtima">QUẢNG CÁO</a></div>
                 <div className={cx('text_footer')}><a href="https://zalo.careers/jobs">TUYỂN DỤNG</a></div>
-                <div className={cx('text_footer')}><a href="">LIÊN HỆ</a></div>
+                <div className={cx('text_footer')}><a href="Contact">LIÊN HỆ</a></div>
 
             </div>
             

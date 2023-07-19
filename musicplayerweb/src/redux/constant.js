@@ -46,10 +46,10 @@ export const MENU_USER_HEADER = [
     //     title: 'Mua code VIP',
     //     icon: IconsVIP,
     // },
-    {
-        title: 'Tải lên',
-        icon: Upload,
-    },
+    // {
+    //     title: 'Tải lên',
+    //     icon: Upload,
+    // },
     {
         title: 'Đăng Xuất',
         icon: LogOut,
@@ -97,22 +97,24 @@ export const MENU_SETTING_HEADER = [
         icon: Info,
         textblur: true,
         spederate: true,
+        to: '/introduce',
     },
     {
         title: 'Liên hệ',
         icon: Phone,
         textblur: true,
+        to: './contact'
     },
     // {
     //     title: 'Quảng cáo',
     //     icon: Ads,
     //     textblur: true,
     // },
-    {
-        title: 'Thỏa thuận sử dụng',
-        icon: Dieukhoan,
-        textblur: true,
-    },
+    // {
+    //     title: 'Thỏa thuận sử dụng',
+    //     icon: Dieukhoan,
+    //     textblur: true,
+    // },
 ];
 
 // handle Action render

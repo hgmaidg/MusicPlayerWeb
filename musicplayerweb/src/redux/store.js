@@ -6,6 +6,7 @@ import {
     sidebarSlice,
     statusSlice,
     themeSlice,
+    uploadSlice,
 } from './sliceReducer';
 
 const store = configureStore({
@@ -16,6 +17,7 @@ const store = configureStore({
         theme: themeSlice.reducer,
         login: loginSlice.reducer,
         radio: radioSlice.reducer,
+        upload: uploadSlice.reducer,
     },
 });
 export default store;

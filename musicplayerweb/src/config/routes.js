@@ -9,6 +9,7 @@ import Zingchart from '../pages/Zingchart';
 import MyPlayer from '../pages/MyPlayer/';/* 
 import Following from '../pages/Following'; */
 import Introduce from '../pages/Introduce/Introduce';
+import Contact from '../pages/Contact/Contact';
 import Top100 from '../pages/Top100/Top100';
 import AlbumSinger from '../pages/AlbumSinger';
 import AccountPage from '../pages/Account/Account';
@@ -86,6 +87,10 @@ const config = {
     introduce: {
         component: Introduce,
         path: 'introduce',
+    },
+    contact: {
+        component: Contact,
+        path: 'contact',
     },
 };
 export default config;

@@ -70,4 +70,9 @@ export const privateRoutes = [
         path: config.introduce.path,
         component: config.introduce.component,
     },
+    {
+        path: config.contact.path,
+        component: config.contact.component,
+    },
+
 ];

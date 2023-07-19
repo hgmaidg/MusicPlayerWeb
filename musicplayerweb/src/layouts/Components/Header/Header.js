@@ -112,7 +112,8 @@ import { combinedStatusSelector } from '../../../redux/selector';
 import {
     loginSlice,
     statusSlice,
-    themeSlice
+    themeSlice,
+    uploadSlice,
 } from '../../../redux/sliceReducer';
 import Menu from '../Menu';
 import styles from './Header.module.scss';
@@ -135,6 +136,9 @@ function Header({ styles, isScrollHeader }) {
     };
     const handleLogin = () => {
         dispatch(loginSlice.actions.setIsLogin(true));
+    };
+    const handleUpload = () => {
+        dispatch(uploadSlice.actions.setIsLogin(true));
     };
 
     const handleSearchForm = async (e) => {
@@ -202,6 +206,16 @@ function Header({ styles, isScrollHeader }) {
                                         onHandle={onChangeTheme}
                                     />
                                 </div>
+
+                                <div className={cx('btn_upload')}>
+                                    <Button
+                                        circle
+                                        Icons={IconsUpload}
+                                        extraTitle={'Upload'}
+                                        onHandle={handleUpload}
+                                    />
+                                </div>
+
                             </div>
                         </div>
                         {searchForm && (
@@ -268,11 +282,12 @@ function Header({ styles, isScrollHeader }) {
                                     onHandle={onChangeTheme}
                                 />
 
-                                <Button
+                                {/* <Button
                                     circle
                                     Icons={IconsUpload}
                                     extraTitle={'Upload'}
-                                />
+                                    onHandle={handleUpload}
+                                /> */}
 
                                 <Menu items={MENU_SETTING_HEADER}>
                                     <Button
